@@ -14,8 +14,8 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  font-weight: 400;
+  color: #000;
   text-decoration: inherit;
 }
 a:hover {
@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100vw;
 }
 
 h1 {
@@ -52,6 +53,50 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.ant-menu-horizontal .ant-menu-item {
+  transition: all 0.25s ease;
+}
+
+/* bỏ gạch chân active */
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+}
+
+/* màu menu khi active */
+.ant-menu-horizontal .ant-menu-item-selected {
+  color: #FBD596 !important;
+}
+
+/* màu hover */
+.ant-menu-horizontal .ant-menu-item:hover {
+  color: #FBD596 !important;
+  font-weight: bold;
+  transform: scale(1.15);
+}
+
+/* desktop mặc định */
+.desktop-menu {
+  display: flex;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
 }
 
 @media (prefers-color-scheme: light) {

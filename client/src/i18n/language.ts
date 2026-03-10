@@ -1,6 +1,10 @@
 export const language = {
   vi: {
+    homepage: "Trang chủ",
+    introduce: "Giới thiệu",
     product: "Sản phẩm",
+    news: "Tin tức",
+    contact: "Liên hệ",
     addProduct: "Thêm sản phẩm",
     editProduct: "Sửa sản phẩm",
     productName: "Tên sản phẩm",
@@ -10,7 +14,11 @@ export const language = {
     delete: "Xóa",
   },
   en: {
+    homepage: "Home Page",
+    introduce: "Introduce",
     product: "Products",
+    news: "News",
+    contact: "Contact",
     addProduct: "Add Product",
     editProduct: "Edit Product",
     productName: "Product Name",
